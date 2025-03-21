@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- links de formatos -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación a la Boda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lancelot&family=Josefin+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normailize.css">
+    <link rel="stylesheet" href="styles/formulario.css">
+    <script src="https://kit.fontawesome.com/f28c6504ba.js" crossorigin="anonymous"></script>
+</head>
+<!-- Titulo -->
+<body>
+    <header class="header">
+        <div class="overlay">
+            <h1>Alejandra & Roberto</h1>
+            <p>24-Mayo-2025</p>
+            <p>Faltan:</p>
+            <div id="countdown"></div>
+        </div>
+    </header>
+    <!-- Encabezado o contenido -->
+    <main>
+        <section class="encabezado">
+            <img src="images/couple-wedding-ring.png" alt="couple-wedding">
+            <div class="music-container">
+                <button id="playPauseBtn">
+                    <i class="fas fa-play"></i>
+                </button>
+                <div class="progress-container">
+                    <span id="currentTime">0:00</span>
+                    <input type="range" id="progressBar" value="0" min="0" step="0.1">
+                    <span id="duration">0:00</span>
+                </div>
+                <audio id="audio" src="images/cancion.mp4"></audio>
+            </div>                       
+            <h1 class="titulo">Estás invitado.</h1>
+            <p class="frase">"Nada de lo que hagas en esta vida será legendario si tus amigos y familia no están ahí para verlo"</p>
+        </section>
+        <!-- Carrusel padrinos -->
+        <section class="padrinos">
+            <h1 class="titulo">Acompáñanos a nuestra boda y celebremos juntos este día tan especial.</h1>
+            <div class="wrapper">
+                <div class="cart" style="--delay:0;">
+                    <h2>Padrinos de Velación.</h2>
+                    <div class="cont">
+                        <div class="conte">
+                            <p>Bertha Camberos</p>
+                            <p>Heriberto Vera</p>
+                        </div>
+                        <img src="images/candle.png" alt="vela">
+                    </div>
+                </div>
+                <div class="cart" style="--delay:1;">
+                    <h2>Padrinos de Arras.</h2>
+                    <div class="cont">
+                        <div class="conte">
+                            <p>Beatriz Ramírez</p>
+                            <p>Joel Tavera</p>
+                        </div>
+                        <img src="images/coins.png" alt="monedas">
+                    </div>
+                </div>
+                <div class="cart" style="--delay:2;">                        
+                    <h2>Padrinos de Anillos.</h2>
+                    <div class="cont">
+                        <div class="conte">
+                            <p>Magnolia Gómez</p>
+                            <p>Johan Solares</p>
+                        </div>
+                        <img src="images/anillos.png" alt="anillos">
+                    </div>
+                </div>
+                <div class="cart" style="--delay:3;">
+                    <h2>Padrinos de Lazo.</h2>
+                    <div class="cont">
+                        <div class="conte">
+                            <p>Dalia Vera</p>
+                            <p>Juan Palacios</p>
+                        </div>
+                        <img src="images/ribbon.png" alt="lazo">
+                    </div>
+                </div>
+                <div class="cart" style="--delay:4;">
+                    <h2>Padrinos de Biblia.</h2>
+                    <div class="cont">
+                        <div class="conte">
+                            <p>Lorena Espinoza</p>
+                            <p>Fernando Pérez</p>
+                        </div>
+                        <img src="images/bible.png" alt="biblia">
+                    </div>
+                </div>
+                <div class="cart" style="--delay:5;">
+                    <h2>Madrina de Ramo.</h2>
+                    <div class="cont">
+                        <div class="cont">
+                            <p>Diana Dávila</p>
+                        </div>
+                        <img src="images/ramo.png" alt="ramo">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Lugar 1 -->
+        <section class="itinerario">
+        <h1 class="titulo">Itinerario de la boda.</h1>
+            <div class="card">
+                <div class="face front">
+                    <img src="images/parroquia.jpg" alt="Parroquia del Sagrado Corazon de Jesus">
+                    <h2>Parroquia del Sagrado Corazón de Jesús.</h2>
+                </div>
+                <div class="face back"><a href="https://maps.app.goo.gl/AgaiWkcJ1P2nD9dH6" target="_blank">
+                    <h2>Parroquia del Sagrado Corazón de Jesús.</h2>
+                    <p>Calle Gil Preciado NO.11, Zona Centro, Tecolotlán Jal. Haz click aquí para ver como llegar.</p>
+                    <h3>Ceremonia religiosa: 1:00 PM</h3>
+                    <img src="images/bible.png" alt="Ceremonia-ico">
+                </a></div>
+            </div>
+            <!-- Lugar 2 -->
+            <div class="card card1">
+                <div class="face front">
+                  <img src="images/salon.jpg" alt="Salon las Palmas.">
+                  <h2>Terraza las palmas.</h2>  
+                </div>
+                <div class="face back"><a href="https://maps.app.goo.gl/bAaQr3DbbY8hxtPM8" target="_blank">
+                    <h2>Terraza las palmas.</h2>
+                    <p>Calle Roble NO.28, Tecolotlán Jal. Haz click aquí para ver como llegar.</p>
+                    <h3>Evento: 3:00 PM</h3>
+                    <img src="images/comida.png" alt="comida-ico">
+                </a></div>
+            </div>
+        </section>
+<!-- Hoteles para quedarte a hospedarte -->
+        <section class="encabezado">
+            <p class="frase">Esperamos contar con tu presencia en este día tan especial para nosotros y para que el hospedaje no sea un problema a continuación te damos un par de opciones de algunos hoteles.</p>
+        <div class="card quinta" >
+            <div class="face front">
+                <img src="images/hotel_quinta.jpg" alt="Hotel Quia Guillexcursiones.">
+                <h2>Hotel Quinta Guillexcursiones.</h2>
+            </div>
+            <div class="face back"><a href="https://maps.app.goo.gl/oTqMiTUXyVasLbDz7" target="_blank">
+                <h2>Dirección.</h2>
+                <p>Gillermo Castro NO.45, Centro, Tecolotlán.</p>
+                <p>>>Haz click aquí para ver como llegar<<</p>
+                <h2>Teléfonos.</h2>
+                <p>375-12-00-443</p>
+                <p>349-68-80-651</p>
+            </a></div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <img src="images/Real_albatros.jpg" alt="Hotel Real albatros.">
+                <h2>Hotel Real Albatros.</h2>
+            </div>
+            <div class="face back"><a href="https://maps.app.goo.gl/ceHXSHQ17bfS6GQ98" target="_blank">
+                <h2>Dirección.</h2>
+                <p>Álvaro Obregón No.28, Centro, Tecolotlán.</p>
+                <p>>>Haz click aquí para ver como llegar<<</p>
+                <h2>Teléfono.</h2>
+                <p>349-77-60-311</p>
+            </a></div>
+        </div>
+    </section>
+
+<!-- Sección para el código de vestimenta-->
+<section class="codigoVestimenta">
+    <section class="tituloCodigo">
+        <img src="images/gentleman.png" alt="gentleman icono" class="slide1">
+        <h1 class="titulo">Código de vestimenta.</h1>
+        <img src="images/lady.png" alt="lady icono" class="slide1">
+    </section>
+    <div class="contVestiment">
+        <div class="hombres">
+            <img src="images/traje.png" alt="traje" class="traje">
+            <p class="frase">
+                Camisa de vestir, pantalon y zapatos. 
+                Saco o trajes opcionales.
+            </p>
+        </div>
+        <div class="mujeres">
+            <img class="vestido" src="images/vestido.png" alt="vestido">
+            <p class="frase">
+                Vestido largo o hasta la rodilla, 
+                palazzo o pantalón.
+            </p>
+        </div>               
+    </div>
+    <div class="colores">
+        <h1 class="titulo">
+            Lista de colores a utilizar
+        </h1>
+       <div class="utilizar">
+        <p class="parrafo">
+            Azul marino oscuro.<i class="fa-solid fa-circle" style="color: #00304E;"></i>
+        </p>
+        <p class="parrafo">
+            Azul marino.<i class="fa-solid fa-circle" style="color: #000080;"></i>
+        </p>
+        <p class="parrafo">
+            Rosa dorado.<i class="fa-solid fa-circle" style="color: #cd9b8b;"></i>
+        </p>
+        <p class="parrafo">
+            Rosa dorado suave.<i class="fa-solid fa-circle" style="color: #f1cdc1;"></i>
+        </p>
+       </div>
+       <h1 class="titulo">
+        Lista de colores que no se usarán
+       </h1>
+       <div class="utilizar">
+        <p class="parrafo">
+            Blanco <i class="fa-solid fa-circle" style="color: #ffff;"></i>
+        </p>
+        <p class="parrafo">
+            Beige <i class="fa-solid fa-circle" style="color: #ede8d0;"></i>
+        </p>
+        <p class="parrafo">
+            Perla <i class="fa-solid fa-circle" style="color: #fafbf5;"></i>
+        </p>
+        <p class="parrafo">
+            Ivory <i class="fa-solid fa-circle" style="color: #ffffe3;"></i>
+        </p>
+        <p class="parrafo">
+            Terracota <i class="fa-solid fa-circle" style="color: #e2725b;"></i>
+        </p>
+        <p class="parrafo">
+            Rojo <i class="fa-solid fa-circle" style="color: #ff0000;"></i>
+        </p>
+       </div>
+    </div> 
+</section>
+
+<!-- Sección para la wish list o variación de cosas-->
+<section class="mesaDeRegalos">
+    <h1 class="titulo">
+        Mesa de regalos.
+    </h1>
+    <p class="frase">Para nosotros lo más importante es tu asistencia a la boda pero en caso de desear hacernos un regalo, puedes acceder a nuestra mesa de regalos virtual por medio del botón de abajo.</p>
+    <button>
+        <a href="https://www.amazon.com.mx/wedding/registry/2EDJI37GRFRCJ" target="_blank">
+            <img src="images/amazon.png" alt="logo de amazon">
+        </a>
+    </button>
+    <img src="images/sobre.png" alt="Lluvia sobre" class="lluvia">
+    <p class="frase">Luvia de sobres<br>(El día del evento)</p>
+</section>
+    </main>
+
+<!-- Pie de página o sección para formulario -->
+    <footer>
+        <div class="library-card envelope">
+          <div class="front">
+            <p class="stamp">Click aquí para llenar formulario</p>
+        </div>
+        <div class="card">
+            <h2 class="author">Alejandra & Roberto</h2>
+            <h4 class="title">Confirma tu asistencia!</h4>
+        <table>
+            <br>
+            <tr>
+                <td class="due-date form-label"><time>Nombre</time></td>
+                <td class="issued-to"></td>
+            </tr>
+            <tr>
+                <td class="due-date form-label"><time>Correo</time></td>
+                <td class="issued-to"><br></td>
+            </tr>
+            <tr>
+                <td class="due-date form-label"><time>Asistiras?</time></td>
+                <td class="issued-to"><br></td>
+            </tr>
+            <tr>
+                <td class="due-date form-label"><time>Teléfono</time></td>
+                <td class="issued-to"><br></td>
+            </tr>
+            </table>
+            <form id="rsvp-form">
+                <input id="name" name="name" type="text" placeholder="Ingresa tu nombre" required>
+                <input id="email" name="email" type="email" placeholder="Ingresa tu correo">
+            <select id="attending" name="attending" required>
+                <option value="" selected hidden>¿Sí o No?</option>
+                <option value="yes">Sí</option>
+                <option value="no">No</option>
+            </select>
+    
+            <input id="phone" name="phone" type="tel" placeholder="Ingresa tu teléfono" required>
+            <button type="submit" class="submit">Enviar</button>
+            </form>
+
+        </div>
+        </div>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js'></script>
+    </footer>
+    <script>
+
+// Cuenta regresiva hasta la fecha de la boda (24 de Mayo de 2024)
+        const countDownDate = new Date("May 24, 2025 14:00:00").getTime();
+        const countdown = document.getElementById("countdown");
+        const x = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = countDownDate - now;
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            countdown.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+            if (distance < 0) {
+                clearInterval(x);
+                countdown.innerHTML = "¡La boda ha comenzado!";
+            }
+        }, 1000);
+    </script>
+
+<!-- Script titulos -->
+<script>
+    const titles = document.querySelectorAll(".titulo");
+    
+    document.addEventListener("scroll", () => {
+        titles.forEach((title) => {
+            if (isInView(title)) {
+                title.classList.add("titulo--visible");
+            } else {
+                title.classList.remove("titulo--visible");
+            }
+        });
+    });
+    
+    function isInView(element) {
+        const rect = element.getBoundingClientRect();
+        return rect.top < window.innerHeight - 150 && rect.bottom > 0;
+    }
+</script>
+
+<!-- Script reproducción -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const audio = document.getElementById("audio");
+    const playPauseBtn = document.getElementById("playPauseBtn");
+    const progressBar = document.getElementById("progressBar");
+    const currentTimeEl = document.getElementById("currentTime");
+    const durationEl = document.getElementById("duration");
+    const playIcon = '<i class="fas fa-play"></i>';
+    const pauseIcon = '<i class="fas fa-pause"></i>';
+
+    // Play/Pause
+    playPauseBtn.addEventListener("click", function () {
+        if (audio.paused) {
+            audio.play();
+            playPauseBtn.innerHTML = pauseIcon;
+        } else {
+            audio.pause();
+            playPauseBtn.innerHTML = playIcon;
+        }
+    });
+
+    // Actualizar barra de progreso y tiempo
+    audio.addEventListener("timeupdate", function () {
+        let currentTime = audio.currentTime;
+        let duration = audio.duration;
+        
+        progressBar.value = (currentTime / duration) * 100;
+        currentTimeEl.textContent = formatTime(currentTime);
+        durationEl.textContent = formatTime(duration);
+    });
+
+    // Cambiar tiempo al mover la barra de progreso
+    progressBar.addEventListener("input", function () {
+        let duration = audio.duration;
+        audio.currentTime = (progressBar.value / 100) * duration;
+    });
+
+    // Formato de tiempo (mm:ss)
+    function formatTime(time) {
+        if (isNaN(time)) return "0:00";
+        let minutes = Math.floor(time / 60);
+        let seconds = Math.floor(time % 60);
+        return `${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
+    }
+});
+</script>
+
+<!-- Script timeline -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const points = document.querySelectorAll(".point");
+    const timeline = document.querySelector(".timeline");
+    const section = document.querySelector(".time");
+
+    function adjustTimelineHeight() {
+        const firstPoint = points[0];
+        const lastPoint = points[points.length - 1];
+
+        const timelineTop = timeline.getBoundingClientRect().top + window.scrollY;
+        const firstPointTop = firstPoint.getBoundingClientRect().top + window.scrollY;
+        const lastPointBottom = lastPoint.getBoundingClientRect().bottom + window.scrollY;
+
+        let newHeight = lastPointBottom - firstPointTop;
+        
+        // Aplicamos un mínimo de altura para evitar que se encoja demasiado
+        if (newHeight < 500) {
+            newHeight = 500;
+        }
+
+        timeline.style.height = `${newHeight}px`;
+    }
+
+    function checkScroll() {
+        const triggerHeight = window.innerHeight * 0.8;
+
+        let lastActiveIndex = -1;
+
+        points.forEach((point, index) => {
+            const pointTop = point.getBoundingClientRect().top;
+            const textBox = point.querySelector(".text-box");
+
+            if (pointTop < triggerHeight) {
+                point.classList.add("active");
+                textBox.classList.add("visible");
+                lastActiveIndex = index;
+            } else {
+                point.classList.remove("active");
+                textBox.classList.remove("visible");
+            }
+        });
+
+        if (lastActiveIndex >= 0) {
+            timeline.style.background = `linear-gradient(to bottom, #ae7350 ${(lastActiveIndex + 1) / points.length * 100}%, gray ${(lastActiveIndex + 1) / points.length * 100}%)`;
+        } else {
+            timeline.style.background = "gray";
+        }
+    }
+
+    window.addEventListener("scroll", () => {
+        requestAnimationFrame(checkScroll);
+    });
+
+    window.addEventListener("resize", adjustTimelineHeight);
+
+    adjustTimelineHeight();
+    checkScroll();
+});
+</script>
+
+<!-- Script frase -->
+<script>
+const paragraphs = document.querySelectorAll(".frase");
+
+document.addEventListener("scroll", () => {
+    paragraphs.forEach((paragraph) => {
+        if (isInView(paragraph)) {
+            paragraph.classList.add("frase--visible");
+        } else {
+            paragraph.classList.remove("frase--visible");
+        }
+    });
+});
+
+function isInView(element) {
+    const rect = element.getBoundingClientRect();
+    return rect.top < window.innerHeight - 150 && rect.bottom > 0;
+}
+</script>
+
+<!-- Script slide-in -->
+<script>
+const parrafo = document.querySelectorAll(".parrafo");
+
+document.addEventListener("scroll", () => {
+    parrafo.forEach((paragraph) => {
+        if (isInView(paragraph)) {
+            paragraph.classList.add("parrafo--visible");
+        } else {
+            paragraph.classList.remove("parrafo--visible");
+        }
+    });
+});
+
+function isInView(element) {
+    const rect = element.getBoundingClientRect();
+    return rect.top < window.innerHeight - 150 && rect.bottom > 0;
+}
+</script>
+
+<!-- Script slide-imagenes -->
+<script>
+    const slides1 = document.querySelectorAll(".slide1");
+    
+    document.addEventListener("scroll", () => {
+        slides1.forEach((photo1) => {
+            if (isInView(photo1)) {
+                photo1.classList.add("slide1--visible");
+            } else {
+                photo1.classList.remove("slide1--visible");
+            }
+        });
+    });
+    
+    function isInView(element) {
+        const rect = element.getBoundingClientRect();
+        return rect.top < window.innerHeight - 150 && rect.bottom > 0;
+    }
+</script>
+
+<!-- Script Envío de correo y whatsapp -->
+<script>
+$(document).ready(function() {
+    $(".front").click(function() {
+        if ($(".library-card.envelope").hasClass("card-in")) {
+            $(".library-card.envelope").toggleClass("card-in");
+        }
+        $(".library-card.envelope").toggleClass("card-out");
+    });
+
+    $("#rsvp-form").submit(async function(event) {
+        event.preventDefault();
+
+        $(".library-card.envelope").toggleClass("card-in");
+        if ($(".library-card.envelope").hasClass("card-out")) {
+            $(".library-card.envelope").toggleClass("card-out");
+        }
+        $(".stamp").html("Gracias!");
+
+        // Corregimos el valor de attending (antes estaba incorrecto)
+        const formData = {
+            name: document.querySelector("#name").value,
+            email: document.querySelector("#email").value,
+            phone: document.querySelector("#phone").value,
+            attending: document.querySelector("#attending").value
+        };
+
+        console.log("Datos enviados:", formData);
+
+        try {
+            const response = await fetch("/api/index", { // Cambia esto a la URL correcta si es necesario
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData)
+            });
+            console.log("Respuesta cruda del servidor:", response);
+
+            if (!response.ok) {
+                const errorText = await response.text();
+                console.error(" Error en la respuesta del servidor:", response.status, errorText);
+                throw new Error("Error en el servidor: " + errorText);
+            }
+
+            const data = await response.json(); // Ahora procesamos correctamente la respuesta JSON
+            console.log("Respuesta del servidor:", data);
+
+            $("#mensaje-confirmacion").html("¡Gracias por confirmar tu asistencia!");
+
+            // Si el servidor devuelve un enlace de WhatsApp, redirigir
+            if (data.whatsappLink) {
+                console.log(" Redirigiendo a WhatsApp:", data.whatsappLink);
+                setTimeout(() => {
+                    window.location.href = data.whatsappLink; // Redirección
+                }, 2000);
+            } else {
+                console.log("No se encontró el enlace de WhatsApp en la respuesta.");
+            }
+
+            // Resetear el formulario después del envío exitoso
+            $("#rsvp-form").trigger("reset");
+            setTimeout(function() {
+                $(".stamp").html("Click aquí para llenar formulario");
+            }, 3000);
+
+        } catch (error) {
+            console.error("Error al enviar el formulario:", error);
+            $("#mensaje-confirmacion").html("Error al enviar el formulario. Inténtalo de nuevo.");
+        }
+    });
+});
+
+    </script>
+  
+    <p id="mensaje-confirmacion"></p>
+</body>
+</html>
